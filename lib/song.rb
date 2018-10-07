@@ -7,7 +7,7 @@ class Song
   
   def artist_name=(name)
     self.artist = Artist.find_or_create_by_name(name)
-    artist
+    artist.
     #sets artist to unique artist 
     #add song to artist's collection 
     #
