@@ -8,9 +8,6 @@ class Song
   def artist_name=(name)
     self.artist = Artist.find_or_create_by_name(name)
     artist.add_song(self)
-    #sets artist to unique artist 
-    #add song to artist's collection 
-    #
   end
   
   def self.new_by_filename(filename)
