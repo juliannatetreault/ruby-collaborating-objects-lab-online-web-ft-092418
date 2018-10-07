@@ -11,7 +11,6 @@ class MP3Importer
     file_array = Dir.glob("#{self.path}/*.mp3")
     #binding.pry
     file_array.collect {|file| file.gsub("#{self.path}/", "")}
-   # "./spec/fixtures/mp3s/*.mp3"
   end
   
   def import
