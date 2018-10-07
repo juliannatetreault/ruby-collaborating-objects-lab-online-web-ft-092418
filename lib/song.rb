@@ -6,6 +6,7 @@ class Song
   end
   
   def artist_name=(name)
+    self.artist = Artist.name 
     #sets artist to unique artist 
     #add song to artist's collection 
     #
